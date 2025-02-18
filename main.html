@@ -1,23 +1,73 @@
+<!DOCTYPE html>
+<html>
 <head>
+    <title>My 90's Devlog</title>
+    <style>
+        body {
+            background: url('https://www.transparenttextures.com/patterns/gray-sand.png');
+            color: #00FF00;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            text-align: center;
+        }
+        marquee {
+            font-size: 20px;
+            font-weight: bold;
+            color: yellow;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 10px;
+            border: 3px dashed #FF00FF;
+            background: black;
+        }
+        h1 {
+            color: cyan;
+            text-shadow: 2px 2px purple;
+        }
+        .project {
+            border: 2px solid red;
+            padding: 10px;
+            margin-top: 10px;
+            background: #111;
+        }
+        .gif {
+            margin-top: 10px;
+        }
+        .button {
+            display: inline-block;
+            background: yellow;
+            padding: 10px;
+            border: 3px inset #FF00FF;
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+    </style>
 </head>
-<body class="center bg2 max">
-<div id="main">
-<h1 class="tab blink">Welcome to my website!</h1>
-<div id="home">
-<h4><a href="#home">Home</a> <span class="line">|</span>
-<a href="#about">About Me</a> <span class="line">|</span>
-<a href="#working">Projects I am Working On</a> <span class="line">|</span>
-<a href="#made">Stuff I Made</a></h4>
-</div>
-<img class="intro" id="about" src="https://i.imgur.com/VzhrVJt.gif">
-<h2>This is the base file for the 90s themed website I want to make</h2>
-<h2 id="working">Projects I am working on</h2>
-<p></p>
-<h2 id="made">Stuff I made</h2>
-</div>
-<footer id="footer">
-<img src="https://i.imgur.com/i6hvJjx.gif">
-<p>This is a link to my <a href="http://portfolio.coolandgood.org">portfolio</a></p>
-<span><img src="https://i.imgur.com/QkBkUkC.gif"></span>
-</footer>
+<body>
+    <marquee>Welcome to My Awesome 90's Devlog!</marquee>
+    <div class="container">
+        <h1>Devlog - February 2025</h1>
+        <p>Here you will find updates on my latest projects!</p>
+        
+        <div class="project">
+            <h2>Project: Space Invaders Clone</h2>
+            <p>Status: In Development 🚀</p>
+            <p>Description: A classic arcade shooter remake using JavaScript and Canvas.</p>
+            <a href="#" class="button">[Download Demo]</a>
+        </div>
+        
+        <div class="project">
+            <h2>Project: 8-Bit RPG</h2>
+            <p>Status: Concept Phase 🎮</p>
+            <p>Description: A turn-based RPG inspired by old-school JRPGs.</p>
+            <a href="#" class="button">[View Concept Art]</a>
+        </div>
+        
+        <div class="gif">
+            <img src="https://media.giphy.com/media/3o7abldj0b3rxrZUxW/giphy.gif" alt="Dancing Baby GIF">
+        </div>
+    </div>
 </body>
+</html>
