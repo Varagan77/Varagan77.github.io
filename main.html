@@ -1,73 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My 90's Devlog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devlog</title>
     <style>
         body {
-            background: url('https://www.transparenttextures.com/patterns/gray-sand.png');
-            color: #00FF00;
-            font-family: "Comic Sans MS", cursive, sans-serif;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 15px;
             text-align: center;
         }
-        marquee {
-            font-size: 20px;
-            font-weight: bold;
-            color: yellow;
+        nav {
+            background: #555;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
         }
         .container {
-            width: 80%;
-            margin: auto;
-            padding: 10px;
-            border: 3px dashed #FF00FF;
-            background: black;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1 {
-            color: cyan;
-            text-shadow: 2px 2px purple;
+        section {
+            margin-bottom: 40px;
         }
-        .project {
-            border: 2px solid red;
-            padding: 10px;
-            margin-top: 10px;
-            background: #111;
-        }
-        .gif {
-            margin-top: 10px;
-        }
-        .button {
-            display: inline-block;
-            background: yellow;
-            padding: 10px;
-            border: 3px inset #FF00FF;
-            text-decoration: none;
-            font-weight: bold;
-            color: black;
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
         }
     </style>
 </head>
 <body>
-    <marquee>Welcome to My Awesome 90's Devlog!</marquee>
+    <header>
+        <h1>Development Log</h1>
+    </header>
+    <nav>
+        <a href="#overview">Overview</a>
+        <a href="#updates">Updates</a>
+        <a href="#features">Features</a>
+        <a href="#issues">Issues & Fixes</a>
+        <a href="#future">Future Plans</a>
+    </nav>
     <div class="container">
-        <h1>Devlog - February 2025</h1>
-        <p>Here you will find updates on my latest projects!</p>
-        
-        <div class="project">
-            <h2>Project: Space Invaders Clone</h2>
-            <p>Status: In Development 🚀</p>
-            <p>Description: A classic arcade shooter remake using JavaScript and Canvas.</p>
-            <a href="#" class="button">[Download Demo]</a>
-        </div>
-        
-        <div class="project">
-            <h2>Project: 8-Bit RPG</h2>
-            <p>Status: Concept Phase 🎮</p>
-            <p>Description: A turn-based RPG inspired by old-school JRPGs.</p>
-            <a href="#" class="button">[View Concept Art]</a>
-        </div>
-        
-        <div class="gif">
-            <img src="https://media.giphy.com/media/3o7abldj0b3rxrZUxW/giphy.gif" alt="Dancing Baby GIF">
-        </div>
+        <section id="overview">
+            <h2>Project Overview</h2>
+            <p>Welcome to the development log of our project. Here, we document progress, challenges, and future goals.</p>
+        </section>
+        <section id="updates">
+            <h2>Recent Updates</h2>
+            <p>- Version 1.1 released with major performance improvements.</p>
+            <p>- Fixed several UI glitches and enhanced user experience.</p>
+        </section>
+        <section id="features">
+            <h2>Implemented Features</h2>
+            <p>- New navigation system added.</p>
+            <p>- Dark mode toggle introduced.</p>
+        </section>
+        <section id="issues">
+            <h2>Issues & Fixes</h2>
+            <p>- Resolved crash on startup affecting some devices.</p>
+            <p>- Fixed alignment issues in mobile view.</p>
+        </section>
+        <section id="future">
+            <h2>Future Plans</h2>
+            <p>- Implement multiplayer support.</p>
+            <p>- Enhance AI performance and response time.</p>
+        </section>
     </div>
 </body>
 </html>
