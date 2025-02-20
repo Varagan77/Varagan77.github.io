@@ -3,83 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Devlog</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #333;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-        nav {
-            background: #555;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-        }
-    </style>
+    <title>Varagan77</title>
+    <link rel="stylesheet" href="style.css">
+<script>
+    function loadComponent(file, elementId) {
+        fetch(file)
+        .then(response => response.text())
+        .then(data => document.getElementById(elementId).innerHTML = data);
+    }
+
+    window.onload = function() {
+        loadComponent('header.html', 'header');
+        loadComponent('footer.html', 'footer');
+    };
+</script>
 </head>
 <body>
-    <header>
-        <h1>My Devlog - Just Me Doing My Thing</h1>
-    </header>
-    <nav>
-        <a href="#overview">Overview</a>
-        <a href="#updates">Updates</a>
-        <a href="#features">Features</a>
-        <a href="#issues">Issues & Fixes</a>
-        <a href="#future">Future Plans</a>
-    </nav>
-    <div class="container">
-        <section id="overview">
-            <h2>What I'm Up To</h2>
-            <p>Hey there! This is my personal devlog where I share what I’ve been working on, what’s going well, and what’s totally breaking.</p>
-        </section>
-        <section id="updates">
-            <h2>Latest Shenanigans</h2>
-            <p>- Just dropped v1.1! Performance is way better now.</p>
-            <p>- Fixed some annoying UI bugs that were driving me nuts.</p>
-        </section>
-        <section id="features">
-            <h2>Cool Stuff I Added</h2>
-            <p>- Revamped the navigation to be smoother.</p>
-            <p>- Dark mode is here! No more burning your eyes at night.</p>
-        </section>
-        <section id="issues">
-            <h2>Oops... My Bad</h2>
-            <p>- Squashed a startup crash bug. Whoops.</p>
-            <p>- Fixed some weird alignment stuff on mobile.</p>
-        </section>
-        <section id="future">
-            <h2>What's Next?</h2>
-            <p>- Gonna try adding multiplayer support. Wish me luck.</p>
-            <p>- Improving AI so it doesn’t act like a clueless potato.</p>
-        </section>
-    </div>
+    <div id="header"></div>
+    <h1>Varagan77</h1>
+    <h2>Programmer, doodler, and a terrible dad joke enthusiast from South Africa. Take a look at my work using the links below.</h2>
+<div id="footer"></div>
 </body>
 </html>
+
