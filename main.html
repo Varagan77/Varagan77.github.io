@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Varagan77</title>
-    <link rel="stylesheet" href="style.css">
-<script>
-    function loadComponent(file, elementId) {
-        fetch(file)
-        .then(response => response.text())
-        .then(data => document.getElementById(elementId).innerHTML = data);
-    }
-
-    window.onload = function() {
-        loadComponent('header.html', 'header');
-        loadComponent('footer.html', 'footer');
-    };
-</script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="header"></div>
+    <!-- Manually added navbar -->
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="library.html">Library</a>
+        <a href="log.html">Logs</a>
+        <a href="projects.html">Projects</a>
+        <a href="art.html">Artwork</a>
+    </nav>
+
     <h1>Varagan77</h1>
     <h2>Programmer, doodler, and a terrible dad joke enthusiast from South Africa. Take a look at my work using the links below.</h2>
-<div id="footer"></div>
+
+    <!-- Manually added footer -->
+    <footer>
+        <p>&copy; 2025 Varagan77. All rights reserved.</p>
+    </footer>
 </body>
 </html>
-
