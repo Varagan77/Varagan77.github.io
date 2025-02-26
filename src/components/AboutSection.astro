@@ -1,18 +1,7 @@
-<section class="my-20">
-  <h2 class="text-2xl font-semibold mb-1">Who am I?</h2>
-  <hr class="mb-4 border-zinc-600">
-  <p class="leading-8 text-lg text-pretty mb-3 text-zinc-400">Hey there, I'm  <strong class="text-zinc-100 font-medium">John.</strong>
-    <p></p>
-  <p class="leading-8 text-lg text-pretty text-zinc-400">Currently studying to become a <strong class="text-zinc-100 font-medium">software engineer.</strong></p>
-  <p></p>
-  <p class="leading-8 text-lg text-pretty text-zinc-400">I take pride in my work, perhaps a bit too much. I believe that
-    applications shouldn't fool a user with it's glamour and beauty,
-    instead I focus on <strong class="text-zinc-100 font-medium">what works.</strong></p>
-    <p></p>
-  <p class="leading-8 text-lg text-pretty text-zinc-400">With that out of the way, thank you for visitng my corner on the
-    web, it's currently in <strong class="text-zinc-100 font-medium">WIP</strong> but it will be up and running soon enough</p>
-</section>
+---
+import NotFound from "../components/NotFound.astro";
 
+const isNotFound = true;
+---
 
-
-
+{isNotFound ? <NotFound /> : <p>Here are some blog posts...</p>}

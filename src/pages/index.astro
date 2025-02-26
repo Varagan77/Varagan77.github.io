@@ -1,26 +1,20 @@
 ---
 import Layout from '@layouts/Layout.astro';
-import Navbar from '@components/Navbar.astro';
+import TopSection from '@components/TopSection.astro';
 import ProfileSection from '@components/ProfileSection.astro';
-import AboutSection from '@components/AboutSection.astro';
-import ProjectsSection from '@components/ProjectsSection.astro';
-import SkillsSection from '@components/SkillsSection.astro';
-import FinalSection from '@components/FinalSection.astro';
+import BottomSection from '@components/BottomSection.astro';
 ---
 
 <Layout title="John W.">
   <div class="min-w-[535px] max-w-screen-sm mx-auto py-16 px-8 selection:bg-gray-600 selection:text-white">
     <header>
-      <Navbar />
       <ProfileSection />
+      <TopSection />
     </header>
     <main>
-      <AboutSection />
-      <ProjectsSection />
-      <SkillsSection />
     </main>
     <footer>
-      <FinalSection />
+      <BottomSection />
     </footer>
   </div>
 </Layout>
