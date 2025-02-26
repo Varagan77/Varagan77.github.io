@@ -1,0 +1,25 @@
+---
+import Github from "@assets/icons/github.astro"
+import ContainerHover from "@components/ContainerHover.astro"
+---
+
+<nav class="w-full flex justify-between items-center flex-col text-lg">
+  <div class="flex gap-3 items-center">
+    <ContainerHover link="/about_me">
+      <div>About Me</div>
+    </ContainerHover>
+    
+    <ContainerHover link="/portfolio">
+      <div>Portfolio</div>
+    </ContainerHover>
+    
+    <ContainerHover link="/logs">
+      <div>Project Logs</div>
+    </ContainerHover>
+
+    <ContainerHover link="https://github.com/Varagan77">
+      <Github />
+    </ContainerHover>
+  
+  </div>
+</nav>
