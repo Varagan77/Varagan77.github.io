@@ -1,4 +1,4 @@
----
+--- 
 import IconContainer from "@components/IconContainer.astro";
 import Css from "@assets/icons/css.astro";
 import Javascript from "@assets/icons/javascript.astro";
@@ -18,93 +18,108 @@ import Phone from "@assets/phone.astro";
 const avatarUrl = "https://avatars.githubusercontent.com/u/151628387?v=4";
 ---
 
-  <!-- About Me Section --> 
+<!-- About Me Section --> 
 <Layout>
+  <div class="flex flex-col items-center justify-center mt-20 mb-16">
+    <h1 class="text-4xl font-bold block">John W.</h1>
+  </div>
   <div class="flex flex-col items-center justify-center mt-20 mb-16">
     <ContainerHover link="/">
       <p class="text-2xl text-zinc-400"><em>Home</em></p>
-    </div>
     </ContainerHover>
-    <div class="flex flex-col items-center justify-center mt-20 mb-16">
-    <img src={avatarUrl} alt="Avatar" class="w-72 border border-solid rounded-full" />
   </div>
-    <section class="my-20 m-96"> <h2 class="text-2xl font-semibold mb-1">Who am I?</h2> <hr class="mb-4 border-zinc-600"> <p class="leading-8 text-lg text-pretty mb-3 text-zinc-400">Hey there, I'm <strong class="text-zinc-100 font-medium">John.</strong> </p><p></p> <p class="leading-8 text-lg text-pretty text-zinc-400">Currently studying to become a <strong class="text-zinc-100 font-medium">software engineer.</strong></p> <p></p> <p class="leading-8 text-lg text-pretty text-zinc-400">I take pride in my work, perhaps a bit too much. I believe that
-      applications shouldn't fool a user with it's glamour and beauty,
-      instead I focus on <strong class="text-zinc-100 font-medium">what works.</strong></p> <p></p> <p class="leading-8 text-lg text-pretty text-zinc-400">With that out of the way, thank you for visitng my corner on the
-      web, it's currently in <strong class="text-zinc-100 font-medium">WIP</strong> but it will be up and running soon enough</p>
-    </section>
-  
+  <div class="flex flex-col items-center justify-center mt-20 mb-16">
+    <img src={avatarUrl} alt="Avatar" class="w-72 md:w-72 w-full border border-solid rounded-full" />
+  </div>
+  <section class="my-20 sm:m-10 md:m-96">
+    <h2 class="text-2xl sm:text-xl font-semibold mb-1">Who am I?</h2>
+    <hr class="mb-4 border-zinc-600">
+    <p class="leading-8 text-lg text-pretty mb-3 text-zinc-400">
+      Hey there, I'm <strong class="text-zinc-100 font-medium">John.</strong>
+    </p>
+    <p class="leading-8 text-lg text-pretty text-zinc-400">
+      Currently studying to become a <strong class="text-zinc-100 font-medium">software engineer.</strong>
+    </p>
+    <p class="leading-8 text-lg text-pretty text-zinc-400">
+      I take pride in my work, perhaps a bit too much. I believe that
+      applications shouldn't fool a user with its glamour and beauty,
+      instead I focus on <strong class="text-zinc-100 font-medium">what works.</strong>
+    </p>
+    <p class="leading-8 text-lg text-pretty text-zinc-400">
+      With that out of the way, thank you for visiting my corner on the
+      web, it's currently in <strong class="text-zinc-100 font-medium">WIP</strong> but it will be up and running soon enough.
+    </p>
+  </section>
 
   <!-- Skills Section --> 
+  <section class="my-20 sm:m-10 md:m-96">
+    <h2 class="text-2xl sm:text-xl font-semibold mb-1">Weapons of Choice</h2>
+    <hr class="mb-6 border-zinc-600">
 
-<section class="my-20 m-96 ">
-  <h2 class="text-2xl font-semibold mb-1">Weapons of Choice</h2>
-  <hr class="mb-6 border-zinc-600">
+    <h3 class="text-xl font-medium mb-4">Frontend</h3>
+    <div class="flex flex-wrap gap-5 justify-center">
+      <IconContainer name="HTML">
+        <Html size="size-9" />
+      </IconContainer>
+      <IconContainer name="CSS">
+        <Css size="size-9" />
+      </IconContainer>
+      <IconContainer name="Javascript">
+        <Javascript size="size-9" />
+      </IconContainer>
+      <IconContainer name="Astro">
+        <AstroIcon size="size-9" />
+      </IconContainer>
+    </div>
 
-  <h3 class="text-xl font-medium mb-4">Frontend</h3>
-  <div class="flex flex-wrap gap-5">
-    <IconContainer name="HTML">
-      <Html size="size-9" />
-    </IconContainer>
-    <IconContainer name="CSS">
-      <Css size="size-9" />
-    </IconContainer>
-    <IconContainer name="Javascript">
-      <Javascript size="size-9" />
-    </IconContainer>
-    <IconContainer name="Astro">
-      <AstroIcon size="size-9" />
-    </IconContainer>
-  </div>
+    <h3 class="text-xl font-medium mt-6 mb-4">Backend</h3>
+    <div class="flex flex-wrap gap-5 justify-center">
+      <IconContainer name="Node">
+        <Node size="size-9" />
+      </IconContainer>
+      <IconContainer name="MySQL">
+        <Mysql size="size-9" />
+      </IconContainer>
+      <IconContainer name="PostgreSQL">
+        <Postgresql size="size-9" />
+      </IconContainer>
+    </div>
 
-  <h3 class="text-xl font-medium mt-6 mb-4">Backend</h3>
-  <div class="flex flex-wrap gap-5">
-    <IconContainer name="Node">
-      <Node size="size-9" />
-    </IconContainer>
-    <IconContainer name="MySQL">
-      <Mysql size="size-9" />
-    </IconContainer>
-    <IconContainer name="PostgreSQL">
-      <Postgresql size="size-9" />
-    </IconContainer>
-  </div>
+    <h3 class="text-xl font-medium mt-6 mb-4">Skills</h3>
+    <div class="flex flex-wrap gap-5 justify-center">
+      <IconContainer name="Git">
+        <Git size="size-9" />
+      </IconContainer>
+      <IconContainer name="Github">
+        <Github size="size-9" />
+      </IconContainer>
+      <IconContainer name="VSCode">
+        <Vscode size="size-9" />
+      </IconContainer>
+    </div>
+  </section>
 
-  <h3 class="text-xl font-medium mt-6 mb-4">Skills</h3>
-  <div class="flex flex-wrap gap-5">
-    <IconContainer name="Git">
-      <Git size="size-9" />
-    </IconContainer>
-    <IconContainer name="Github">
-      <Github size="size-9" />
-    </IconContainer>
-    <IconContainer name="VSCode">
-      <Vscode size="size-9" />
-    </IconContainer>
-    
-  </div>
-</section>
+  <!-- Contact Me Section -->
+  <nav class="w-full flex justify-between items-center flex-col text-lg">
+    <h2 class="text-2xl sm:text-xl font-semibold mb-1">Contact Me</h2>
+    <div class="flex gap-3 items-center">
+      <ContainerHover link="">
+        <div>@Varagan77</div>
+      </ContainerHover>
+      
+      <ContainerHover link="mailto:johanneswillemkotze@gmail.com">
+        <Email />
+      </ContainerHover>
+      
+      <ContainerHover link="404">
+        <Linkedin />
+      </ContainerHover>
 
-<nav class="w-full flex justify-between items-center flex-col text-lg">
-  <h2 class="text-2xl font-semibold mb-1">Contact Me</h2>
-  <div class="flex gap-3 items-center">
-    <ContainerHover link="">
-      <div>@Varagan77</div>
-    </ContainerHover>
-    
-    <ContainerHover link="/">
-      <Email/>
-    </ContainerHover>
-    
-    <ContainerHover link="/">
-      <Linkedin/>
-    </ContainerHover>
+      <ContainerHover link="/">
+        <div>+27 76 477 7588</div>
+      </ContainerHover>
+    </div>
+  </nav>
 
-    <ContainerHover link="/">
-      <div>+27 76 477 7588</div>
-    </ContainerHover>
-  </div>
-</nav>
-
-<div class="flex flex-col items-center justify-center mt-20 mb-16"/>
+  <div class="flex flex-col items-center justify-center mt-20 mb-16" />
 </Layout>
